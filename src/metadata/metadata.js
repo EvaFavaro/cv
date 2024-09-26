@@ -1,50 +1,68 @@
 module.exports = {
   name: 'Eva Favaro',
-  title: 'Laureata in Matematica',
+  title: 'Software Engineer',
   facts: {
-    'Residence': '<i class="fa fa-home fact-icon"></i>Venezia, Veneto, Italia',
-    'Email': '<a href="mailto:evafavaro@libero.it"><i class="fa fa-envelope fact-icon"></i>evafavaro@libero.it</a>'
+    home: {
+        icon: '<i class="fa fa-home fact-icon"></i>',
+        name: 'Residence',
+        value: 'Venice, Veneto, Italy'
+    },
+    email: {
+        icon: '<i class="fa fa-envelope fact-icon"></i>',
+        name: 'Email',
+        value: '<a href="mailto:evafavaro@libero.it">evafavaro@libero.it</a>'
+    },
+    github: {
+        icon: '<i class="fa-brands fa-github fact-icon"></i>',
+        name: 'GitHub',
+        value: '<a href="https://github.com/Twenyone">Twenyone</a>'
+    },
+    linkedin: {
+        icon: '<i class="fa-brands fa-linkedin fact-icon"></i>',
+        name: 'Linkedin',
+        value: '<a href="https://www.linkedin.com/in/eva-favaro-09299832b/">Eva Favaro</a>'
+    },
   },
   positions: [
     {
-      title: 'Hamlet',
-      period: 'Likely early 17th century',
-      skills: ['tragedy', 'philosophy', 'death'],
+      title: 'Software Developer',
+      company: 'Bizeta Retail Solutions srl | a Custom company / Custom S.p.A',
+      location: 'Mestre and Mira, Italy',
+      mode: 'Hybrid',  // or 'Remote', 'Hybrid'
+      period: 'since October 2020',
+      skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'T-SQL', 'SQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git', 'Expo'],
       contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
-`
-    },
+  My first experience in Bizeta was working for the GShop Suite making small integrations and by creating 
+  an ETL connector (.NET Core) for GShop Suite and [IdStore](https://www.custom.biz/en_GB/product/software/id-store) 
+  to replace older handhandled Windows CE devices with newer Android ones (Xamarin Android).
+  Two years ago i was moved into the development team for [OneStore](https://www.custom.biz/en_GB/product/software/onestore), 
+  which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+  The Backend is developed in its entirety with .NET and recently I started developing more and more on the frontend side in ReactNative and bundled with [Expo](https://expo.dev).
+
+  Other technologies used: SQL Server, Azure SQL Server, SQLite, Azure Dev
+  For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+  }
+  ],
+  educations: [
     {
-      title: 'Twelfth Night',
-      period: '1600 – 1601',
-      skills: ['comedy', 'love'],
-      contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
-`
-    },
-    {
-      title: 'The Tragedy of Romeo and Juliet',
-      period: '1595–1596, with a possible early draft written in 1591',
-      skills: ['tragedy', 'death', 'love'],
-      contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
-`
+      title: 'High School Diploma in IT',
+      institution: 'ITIS C. Zuccante',
+      location: 'Mestre (Venice), Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
+      period: 'september 2014 - july 2020 · 5 years',
+      skills: ['computer sciences', 'mathematics', 'electronics'],
+      contents: `Specialized subjects studied: mathematics, computer science, statistics, electronics.`
     }
   ],
-  experience: [
+  languages: [
     {
-      header: 'Performance',
-      skills: ['theater', 'play'],
-      contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
+      title: 'Italian',
+      levels: ['Mother Tongue']
     },
     {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
-      contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. I dedicated them to Henry Wriothesley, Earl of Southampton.
-`
+      title: 'English',
+      isSecondLanguage: true,
+      levels:['Listening: B2', 'Reading: B2', 'Writing: B2', 'Speaking: B2']
     }
   ]
 };
