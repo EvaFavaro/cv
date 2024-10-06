@@ -1,11 +1,11 @@
 module.exports = {
   name: 'Eva Favaro',
-  title: 'Software Engineer',
+  title: 'Neolaureata in Matematica',
   facts: {
     home: {
         icon: '<i class="fa fa-home fact-icon"></i>',
-        name: 'Residence',
-        value: 'Venice, Veneto, Italy'
+        name: 'Residenza',
+        value: 'Venezia, Veneto, Italia'
     },
     email: {
         icon: '<i class="fa fa-envelope fact-icon"></i>',
@@ -40,33 +40,33 @@ module.exports = {
   ],
   educations: [
     {
-      title: 'Bachelor Degree in Mathematics',
+      title: 'Laurea Triennale in Matematica',
       institution: 'Università degli Studi di Padova',
-      location: 'Padua, Italy',
-      mode: 'In-person',  // or 'Remote', 'Hybrid'
-      period: 'october 2020 - september 2024 · 4 years',
-      skills: ['mathematics'],
+      location: 'Padova, Italia',
+      mode: 'Ibrido',  // or 'Remote', 'Hybrid'
+      period: 'Ottobre 2020 - Settembre 2024 · 4 anni',
+      skills: [],
       contents: ``
     },
     {
-      title: 'High School Diploma in Electronics',
+      title: 'Perito Elettronico',
       institution: 'ITIS C. Zuccante',
-      location: 'Mestre (Venice), Italy',
-      mode: 'In-person',  // or 'Remote', 'Hybrid'
-      period: 'september 2015 - july 2020 · 5 years',
-      skills: ['computer sciences', 'mathematics', 'electronics'],
-      contents: `Specialized subjects studied: mathematics, computer science, statistics, electronics.`
+      location: 'Mestre (Venezia), Italia',
+      mode: 'In Presenza',  // or 'Remote', 'Hybrid'
+      period: 'Settembre 2015 - Giugno 2020 · 5 anni',
+      skills: ['informatica', 'Matematica', 'elettronica'],
+      contents: `Materie specializzanti studiate: Matematica, informatica, statistica, elettronica.`
     }
   ],
   languages: [
     {
-      title: 'Italian',
-      levels: ['Mother Tongue']
+      title: 'Italiano',
+      levels: ['Madrelingua']
     },
     {
-      title: 'English',
+      title: 'Inglese',
       isSecondLanguage: true,
-      levels:['Listening: B2', 'Reading: B2', 'Writing: B2', 'Speaking: B2']
+      levels:['Ascolto: B2', 'Scrittura: B2']
     }
   ]
 };

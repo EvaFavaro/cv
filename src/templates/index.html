@@ -24,11 +24,11 @@
                 </div>
                 <div>
                     <p>
-                        <time datetime="{{ buildinfo.date }}" class="small">Last update: {{ updated }}</time>
+                        <time datetime="{{ buildinfo.date }}" class="small">Ultimo aggiornamento: {{ updated }}</time>
                     </p>
                     <p>
-                        <span class="screen"><a href="{{ pdfFileName }}"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
-                        <span class="print">Up-to-date version of CV is available at <a href="{{ baseUrl }}"
+                        <span class="screen"><a href="{{ pdfFileName }}"><i class="far fa-file-pdf"></i>Scarica il PDF</a></span>
+                        <span class="print">La versione aggiornata del CV è disponibile <a href="{{ baseUrl }}"
                                                                                         class="text-nowrap"><i
                             class="fab fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
                     </p>
@@ -51,15 +51,19 @@
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        Young developer with a strong passion for IT since childhood.
-        In my work experience I've been focused on developing .NET and React Native based software.
-        I believe that teamwork is fundamental in large-scale software development.
-        Continuous learning and a healthy work-life balance are essential to me.
-
-        My hobbies are: gym, books, movies, TV series, travel, and gaming.
+        Sono una giovane neolaureata in matematica. Ho scelto un percorso di studi in ambito applicativo, con particolare interesse per l'aspetto computazionale. 
+        Nella mia tesi sperimentale ho collaborato con esperti matematici e politici di diversi atenei per controllare l'evoluzione di un fenomeno sociale, dimostrando intraprendenza e creatività nella stesura del codice (Mathematica).
+        Sono amante della precisione e curo ogni dettaglio, che si tratti di presentare un grafico o di decorare dei biscotti.
+        <br>
+        
+        Nel tempo libero sfrutto il mio intuito per risolvere giochi enigmistici e rompicapi. Per me le escape room sono meglio di un parco divertimenti e tra le mie letture non possono mancare casi investigativi da risolvere.
+        Ritengo che la crescita personale continua sia fondamentale, perciò sono molto riflessiva e frequento la palestra. Si può raggiungere tutto a piccoli passi, rispettando i propri tempi e riponendo fiducia nelle proprie capacità.
+        Un altro mio valore è il rispetto per le piccole cose. Mi piace trascorrere il tempo libero nella natura e osservare gli animali: non ha importanza che siano formiche, topi, lepri o animali esotici, li trovo tutti estremamente interessanti nella loro apparente semplicità.
+        <br>
+        Mi piacerebbe inserirmi in un contesto lavorativo giovane, stimolante e dalla mentalità aperta, che sappia riconoscere l'importanza dell'equilibrio vita-lavoro e del team-working.
     </div>
 
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
+    <!-- <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <h2 class="mb-4">Professional Experience</h2>
         {{#each positions}}
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
@@ -82,10 +86,10 @@
             </div>
         </div>
         {{/each}}
-    </div>
+    </div> -->
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Education</h2>
+        <h2 class="mb-4">Istruzione</h2>
         {{#each educations}}
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
             <div class="col-md-3 pt-1">
@@ -109,7 +113,7 @@
         {{/each}}
     </div>
 
-    <h2 class="mb-4">Language skills</h2>
+    <h2 class="mb-4">Competenze linguistiche</h2>
     {{#each languages}}
     <div class="mb-4">
         <h3 class="fs-4 fw-normal">{{ title }}</h3>
@@ -124,7 +128,7 @@
     </div>
     <footer>
         <p style="font-size: x-small; font-style: italic;">
-            I hereby consent to the processing of this CV and the personal data contained within, by anyone who receives this document for the sole purpose of considering my application for employment opportunities, in accordance with Article 6.1(a) of GDPR (EU) 2016/679.
+            Acconsento al trattamento del presente CV e dei dati personali in esso contenuti, da parte di chiunque riceva questo documento al solo fine di valutare la mia candidatura per opportunità di lavoro, ai sensi dell'art. 6.1(a) del GDPR (UE) 2016/679.
         </p>
     </footer>
 

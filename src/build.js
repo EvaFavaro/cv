@@ -4,6 +4,7 @@ const markdownHelper = require('./utils/helpers/markdown');
 const templateData = require('./metadata/metadata');
 const getSlug = require('speakingurl');
 const dayjs = require('dayjs');
+require('dayjs/locale/it.js')
 const repoName = require('git-repo-name');
 const username = require('git-username');
 const buildPdf = require('./utils/pdf.js');
@@ -26,7 +27,7 @@ const html = template({
   ...templateData,
   baseUrl: `https://${username()}.github.io/${repoName.sync()}`,
   pdfFileName,
-  updated: dayjs().format('MMMM D, YYYY'),
+  updated: dayjs().locale('it').format('DD MMMM, YYYY'),
 });
 
 fs.writeFileSync(outputDir + '/index.html', html);
